@@ -13,7 +13,8 @@ Este es un projecto Spring Boot (2.7.8) con Maven (3.9.0) para el manejo de depe
 ## Prerequisitos
 
 El sistema operativo debe contar con las siguientes herramientas/lenguajes:
-* Java 17.0.7
+* Java 17.0.7  
+*Nota: Si tienes la version java 8 utiliza la rama `java8-support`*
 * Maven 3.x.x
 * Git 2.x.x
 
@@ -101,9 +102,9 @@ Al mismo tiempo de guardar el usuario en la base de datos, también se genera un
 
 Para visualizar la base de datos, usted puede acceder a la siguiente URL:
 
-| URL                                    | Usuario | Contraseña |
-|----------------------------------------|---------|------------|
-| ```http://localhost:8080/h2-console``` | sa      | sa         |
+| URL                                    | JDBC URL           | Usuario | Contraseña |
+|----------------------------------------|--------------------|---------|------------|
+| ```http://localhost:8080/h2-console``` | jdbc:h2:mem:testdb | sa      | sa         |
 
 ## Excepciones
 La aplicacion verifica las siguientes excepciones:

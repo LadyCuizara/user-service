@@ -11,23 +11,21 @@ import com.chalenges.userservice.request.UserRequest;
 import com.chalenges.userservice.responses.RegisterUserResponse;
 import com.chalenges.userservice.services.JwtService;
 import io.jsonwebtoken.lang.Assert;
-import net.minidev.asm.BasicFiledFilter;
-import net.minidev.asm.FieldFilter;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.springframework.data.util.ReflectionUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.util.ReflectionTestUtils;
 
 import java.util.Collections;
 import java.util.Optional;
-import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @author lady Cuizara
