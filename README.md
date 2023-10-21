@@ -105,3 +105,10 @@ Para visualizar la base de datos, usted puede acceder a la siguiente URL:
 |----------------------------------------|---------|------------|
 | ```http://localhost:8080/h2-console``` | sa      | sa         |
 
+## Excepciones
+La aplicacion verifica las siguientes excepciones:
+* Verificacion del formato de Email - EmailFormatException: Valida que el formato del email sea el siguiente: ``(aaaaaaa@dominio.cl)``
+
+* Verificacion del correo unico - UserAlreadyExistsException : Verifica que el correo del nuevo usuario no haya sido registrado anteriormente
+
+* Validacion de campos nulos e invalidos: Se verifica que el nombre, email, password del usuario no sean nulos ni vacios.
