@@ -101,9 +101,9 @@ Al mismo tiempo de guardar el usuario en la base de datos, también se genera un
 
 Para visualizar la base de datos, usted puede acceder a la siguiente URL:
 
-| URL                                    | Usuario | Contraseña |
-|----------------------------------------|---------|------------|
-| ```http://localhost:8080/h2-console``` | sa      | sa         |
+| URL                                    | JDBC URL           | Usuario | Contraseña |
+|----------------------------------------|--------------------|---------|------------|
+| ```http://localhost:8080/h2-console``` | jdbc:h2:mem:testdb | sa      | sa         |
 
 ## Excepciones
 La aplicacion verifica las siguientes excepciones:
