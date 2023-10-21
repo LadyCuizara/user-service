@@ -22,6 +22,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * @author lady Cuizara
@@ -93,7 +94,7 @@ public class RegisterUserServiceImpl implements RegisterUserService {
                         .setCountryCode(p.getCountryCode())
                         .setUser(user)
                         .build())
-                .toList();
+                .collect(Collectors.toList());
     }
 
     private String encryptPassword(String password) {
