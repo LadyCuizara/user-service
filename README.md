@@ -2,6 +2,10 @@
 
 Esta es una aplicación que permite crear usuarios que a la vez generan su propio token JWT. Esta funcionalidad esta expuesta en un RESTFull API.
 
+El diagrama E-R para este proyecto es el siguiente:
+
+![](diagram.png)
+
 # Como empezar
 
 Este es un projecto Spring Boot (2.7.8) con Maven (3.9.0) para el manejo de dependencias. La base de datos es de tipo H2 y contiene un script para crear la estructure inicial que se encuentra con el nombre `schema.sql`.
